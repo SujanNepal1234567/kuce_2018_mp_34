@@ -4,7 +4,7 @@ int main()
 {
   int array[100], n, c, d, swap;
 
-  printf("Enter number of elements\n");
+  printf("Enter number of elements less than 100\n");
   scanf("%d", &n);
 
   printf("Enter %d integers\n", n);
@@ -16,7 +16,7 @@ int main()
   {
     for (d = 0 ; d < n - c - 1; d++)
     {
-      if (array[d] > array[d+1]) /* For decreasing order use < */
+      if (array[d] > array[d+1]) /* For decreasing order we use < */
       {
         swap       = array[d];
         array[d]   = array[d+1];
